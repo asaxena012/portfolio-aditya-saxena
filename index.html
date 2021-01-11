@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Aditya's Portfolio</title>
+    <title>Home | Aditya Saxena</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <nav class="navigation container">
-      <div class="nav-brand">ADITYA'S PORTFOLIO</div>
-
+      <!-- <div class="nav-brand">ADITYA'S PORTFOLIO</div> -->
+      <img src="/images/nav-image.svg" alt="" class="nav-image" />
       <ul class="list-non-bullet nav-pills">
         <li class="list-item-inline link-active">
           <a class="link" href="/">Home</a>
@@ -28,10 +32,16 @@
 
     <header class="hero">
       <img class="hero-img" src="/images/hero-image.svg" alt="" />
-      <h1 class="hero-text">
+      <h1 class="hero-text animate__animated animate__pulse">
         aditya saxena |
         <span class="hero-inverted">frontend web developer</span>
       </h1>
+      <p class="container-center">
+        A pre-final year undergraduate at
+        <span class="hero-inverted"
+          >National Institute of Technology Jalandhar</span
+        >.
+      </p>
     </header>
 
     <section class="section section-ow">
@@ -51,7 +61,7 @@
           online through netlify and github pages
         </p>
         <a class="link link-special-primary" href="projects.html"
-          >Explore Projects</a
+          >EXPLORE PROJECTS</a
         >
       </div>
     </section>
@@ -63,7 +73,7 @@
           I am also working on some project related technical blogs, give them a
           read
         </p>
-        <a class="link link-special-secondary" href="blogs.html">Read Blogs</a>
+        <a class="link link-special-secondary" href="blogs.html">READ BLOGS</a>
       </div>
     </section>
 
@@ -74,7 +84,7 @@
           I have worked in ed-tech for about a year as an educator. I also like
           to sing and people say I'm good at it
         </p>
-        <a class="link link-special-secondary" href="projects.html">See More</a>
+        <a class="link link-special-secondary" href="projects.html">SEE MORE</a>
       </div>
     </section>
 
@@ -83,26 +93,31 @@
       <ul class="list-non-bullets">
         <li class="list-item-inline">
           <a class="link" target="_blank" href="https://github.com/asaxena012"
-            >github</a
-          >
+            ><ion-icon class="github" name="logo-github"></ion-icon
+          ></a>
         </li>
         <li class="list-item-inline">
           <a
             class="link"
             target="_blank"
             href="https://www.linkedin.com/in/adityasaxena012/"
-            >linkedin</a
-          >
+            ><ion-icon class="linkedin" name="logo-linkedin"></ion-icon
+          ></a>
         </li>
         <li class="list-item-inline">
           <a
             class="link"
             target="_blank"
             href="https://www.reddit.com/user/strontium1205"
-            >reddit</a
-          >
+            ><ion-icon class="reddit" name="logo-reddit"></ion-icon
+          ></a>
         </li>
       </ul>
     </footer>
+
+    <!-- Absolute positioned elements -->
+    <!-- <img src="/images/nav-image.svg" alt="" class="nav-image" /> -->
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>
 </html>

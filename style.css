@@ -9,6 +9,7 @@
 /* --- Typography --- */
 
 body {
+  position: relative;
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -86,17 +87,20 @@ hr {
 }
 
 .list-item-inline {
-  display: inline;
+  display: inline-block;
   padding: 0rem 0.5rem;
 }
 
 /* --- navigation --- */
 
 .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--primary-color);
   color: white;
   border-bottom-left-radius: 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .nav-brand {
@@ -105,14 +109,25 @@ hr {
 
 .navigation .link {
   color: white;
+  letter-spacing: 0.2rem;
+  transition: 1s;
 }
 
 .nav-pills {
-  text-align: right;
 }
 
 .link-active {
   font-weight: bold;
+}
+
+.nav-pills .link:hover,
+.nav-pills .link:active {
+  letter-spacing: 0.3rem;
+}
+
+.nav-image {
+  max-width: 80px;
+  justify-self: flex-start;
 }
 
 /* --- header --- */
@@ -125,15 +140,17 @@ hr {
   max-width: 400px;
   display: block;
   margin: auto;
+  padding-top: 3rem;
 }
 
 .hero-text {
   padding-top: 1rem;
   color: var(--dark-gray-color);
   text-align: center;
+  line-height: 160%;
 }
 
-.hero-text .hero-inverted {
+.hero-inverted {
   color: var(--primary-color);
 }
 
@@ -183,6 +200,44 @@ hr {
   margin: 0.5rem 0rem;
 }
 
+.link-green {
+  color: #2ecc40;
+}
+
+.link-green:hover,
+.link-green:active {
+  color: #2ecc40;
+  border: 1px solid #2ecc40;
+}
+
 body {
   line-height: 160%;
+}
+
+/* --- icon color effect --- */
+
+.github,
+.linkedin,
+.reddit {
+  font-size: xx-large;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  transition: 0.3s;
+}
+
+.github:hover,
+.github:active {
+  color: #333;
+  transform: scale(1.5);
+}
+
+.linkedin:hover,
+.linkedin:active {
+  transform: scale(1.5);
+}
+
+.reddit:hover,
+.reddit:active {
+  color: #ff4301;
+  transform: scale(1.5);
 }
