@@ -1,0 +1,11 @@
+@media only screen and (max-width: 700px) {
+  .hero-img {
+    max-width: 300px;
+  }
+
+  .btn-theme {
+    top: 200px;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+  }
+}
