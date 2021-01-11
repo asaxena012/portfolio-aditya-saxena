@@ -3,6 +3,7 @@
 :root {
   --primary-color: #1d4ed8;
   --dark-gray-color: #6b7280;
+  --bg-gray-color: #12171fad;
   --ow-color: #f3f4f6;
 }
 
@@ -12,6 +13,15 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+}
+
+body.dark-theme {
+  background-color: black;
+  color: white;
+}
+
+body.dark-theme .section-ow {
+  background-color: var(--bg-gray-color);
 }
 
 /* --- Containers --- */
@@ -240,4 +250,45 @@ body {
 .reddit:active {
   color: #ff4301;
   transform: scale(1.5);
+}
+
+/* Absolute Positioned elements */
+
+/* theme toggle button */
+
+button {
+  border: none;
+}
+
+.btn-theme {
+  position: absolute;
+  top: 150px;
+  right: 3%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.308);
+  transition: 0.5s;
+}
+
+.btn-theme:active {
+  transform: translate(+2%, +10%);
+  box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+.btn-light {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 12px rgba(250, 249, 249, 0.308);
+}
+
+.btn-light:active {
+  border: none;
+  transform: translate(+2%, +10%);
+  box-shadow: 3px 3px 5px rgba(250, 249, 249, 0.308);
 }
