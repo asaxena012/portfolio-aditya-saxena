@@ -3,8 +3,8 @@
 :root {
   --primary-color: #1d4ed8;
   --dark-gray-color: #6b7280;
-  --bg-gray-color: #12171fad;
-  --ow-color: #f3f4f6;
+  --bg-gray-color: #191919;
+  --ow-color: #f3f2f2;
 }
 
 /* --- Typography --- */
@@ -13,10 +13,11 @@ body {
   position: relative;
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  background-color: #f6f6f60e;
 }
 
 body.dark-theme {
-  background-color: black;
+  background-color: #111;
   color: white;
 }
 
