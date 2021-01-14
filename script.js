@@ -30,6 +30,9 @@ elBtn.addEventListener("click", function () {
     theme = "dark";
   }
 
+  if (theme === "dark") elBtn.textContent = "Light Mode";
+  else elBtn.textContent = "Dark Mode";
+
   //Save preference in local storage
   localStorage.setItem("theme", theme);
 });

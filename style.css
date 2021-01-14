@@ -259,6 +259,7 @@ body {
 
 button {
   border: none;
+  outline: none;
 }
 
 .btn-theme {
@@ -267,7 +268,7 @@ button {
   right: 3%;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  background-color: black;
+  background-color: #222;
   color: white;
   border: none;
   padding: 1rem;
@@ -284,7 +285,7 @@ button {
 
 .btn-light {
   background-color: white;
-  color: black;
+  color: #111;
   box-shadow: 5px 5px 12px rgba(250, 249, 249, 0.308);
 }
 
