@@ -124,9 +124,6 @@ hr {
   transition: 1s;
 }
 
-.nav-pills {
-}
-
 .link-active {
   font-weight: bold;
 }
@@ -267,26 +264,41 @@ button {
   top: 150px;
   right: 3%;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  background-color: #222;
-  color: white;
-  border: none;
-  padding: 1rem;
-  border-radius: 0.2rem;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.308);
   transition: 0.5s;
+
+  text-decoration: none;
+  border-radius: 0.6rem;
+  padding: 12px 17px;
+  border: solid 2px #535353;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  font-weight: bold;
+  transition: 0.4s;
+  font-size: 0.73rem;
+  background-color: #36383d;
 }
 
-.btn-theme:active {
+.btn-theme:hover {
+  background-color: #535353;
+  color: white;
+}
+
+/* .btn-theme:active {
   transform: translate(+2%, +10%);
   box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.5);
   border: none;
-}
+} */
 
 .btn-light {
   background-color: white;
   color: #111;
-  box-shadow: 5px 5px 12px rgba(250, 249, 249, 0.308);
+}
+
+.btn-light:hover {
+  background-color: #c6c6c7;
+  color: #202124;
 }
 
 .btn-light:active {
