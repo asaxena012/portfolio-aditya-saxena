@@ -5,34 +5,34 @@
 let elBody = document.querySelector("body");
 let elBtn = document.querySelector(".btn-theme");
 
-const toggleTheme = function () {
+function toggleTheme() {
   elBody.classList.toggle("dark-theme");
   elBtn.classList.toggle("btn-light");
-};
 
-//store the user preference of theme
-let currentTheme = localStorage.getItem("theme");
+  if (elBtn.classList.contains("btn-light")) {
+    elBtn.textContent = "LIGHT MODE";
+  } else {
+    elBtn.textContent = "DARK MODE";
+  }
+}
 
-//check if dark
-if (currentTheme === "dark") {
-  elBody.classList.add("dark-theme");
-  elBtn.classList.add("btn-light");
+let theme = localStorage.getItem("theme");
+
+//Check is same theme else toggle
+if (theme === "dark") {
+  if (!elBody.classList.contains("dark-theme")) {
+    toggleTheme();
+  }
 }
 
 elBtn.addEventListener("click", function () {
   toggleTheme();
 
-  //Assume light theme
-  let theme = "light";
-
-  //check if body has dark theme
   if (elBody.classList.contains("dark-theme")) {
     theme = "dark";
+  } else {
+    theme = "light";
   }
 
-  if (theme === "dark") elBtn.textContent = "Light Mode";
-  else elBtn.textContent = "Dark Mode";
-
-  //Save preference in local storage
   localStorage.setItem("theme", theme);
 });
