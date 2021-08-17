@@ -223,6 +223,15 @@ body {
   line-height: 160%;
 }
 
+.date{
+  display: block;
+  margin-top: 15px;
+}
+
+.blog-date{
+  text-align: center;
+}
+
 /* --- icon color effect --- */
 
 .github,
