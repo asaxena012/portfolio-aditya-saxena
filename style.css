@@ -227,7 +227,7 @@ body {
 
 .github,
 .linkedin,
-.reddit {
+.twitter {
   font-size: xx-large;
   margin-right: 0.5rem;
   vertical-align: middle;
@@ -245,9 +245,9 @@ body {
   transform: scale(1.5);
 }
 
-.reddit:hover,
-.reddit:active {
-  color: #ff4301;
+.twitter:hover,
+.twitter:active {
+  color: #b5b5dd;
   transform: scale(1.5);
 }
 
