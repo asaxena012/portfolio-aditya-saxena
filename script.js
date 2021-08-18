@@ -67,13 +67,13 @@ const blogReaderDate = document.querySelector('.blog-date');
 const readMoreBtns = document.querySelectorAll('.read-more');
 
 const renderBlog = (index) => {
-  sessionStorage.setItem('blogIndex', index)
+  localStorage.setItem('blogIndex', index)
 }
 readMoreBtns.forEach((readMoreBtn, i) => {
   readMoreBtn.addEventListener('click', () => renderBlog(i))
 })
 
-const blogIndex = sessionStorage.getItem('blogIndex');
+const blogIndex = localStorage.getItem('blogIndex');
 
 if(blogIndex){
   const blog = blogs[blogIndex];
