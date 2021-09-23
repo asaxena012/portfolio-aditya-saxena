@@ -2,6 +2,7 @@ const blogHeadings = document.querySelectorAll('.blog-heading');
 const blogDates = document.querySelectorAll('.blog-date');
 const blogBriefs = document.querySelectorAll('.blog-brief');
 const blogHyperlinks = document.querySelectorAll('.blog-hyperlink');
+const blogImages = document.querySelectorAll('.blog-image');
 
 const getHashnodeURL = (slug) => {
     return `https://adityasaxena.hashnode.dev/${slug}/`
@@ -13,6 +14,7 @@ const updateUI = (posts) => {
         blogDates[i].textContent = new Date(post.dateAdded).toDateString();
         blogBriefs[i].textContent = post.brief;
         blogHyperlinks[i].href = getHashnodeURL(post.slug);
+        blogImages[i].src = post.coverImage;
     })
 }
 
